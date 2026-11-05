@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Matematika Informatika - Aril Munazar">
+  <title>Math Lab & Portfolio | Aril Munazar</title>
+  
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Internal/External -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+  <!-- BACKGROUND DEKORASI -->
+  <div class="bg-glow orb-1"></div>
+  <div class="bg-glow orb-2"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="brand">AM</a>
+    <div class="nav-links">
+      <a href="#biodata">Biodata</a>
+      <a href="#kalkulator">Kalkulator Matematika</a>
+      <a href="#bukti-belajar">Bukti Belajar</a>
+    </div>
+    <button class="theme-toggle" id="theme-btn" title="Ubah Tema">
+      <span class="theme-icon">🌙</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> PORTFOLIO UTS · MATEMATIKA INFORMATIKA TA 2026
+      </div>
+      <h1>Eksplorasi Matematika,<br><span class="gradient-text">Berpikir Komputasional.</span></h1>
+      <p class="hero-subtext">
+        Platform interaktif tempat teori matematika informatika diubah menjadi kalkulator visual dan sistem pembelajaran interaktif.
+      </p>
+      <div class="hero-actions">
+        <a href="#kalkulator" class="btn primary-btn">Mulai Eksplorasi <span>→</span></a>
+        <a href="#biodata" class="btn secondary-btn">Profil Mahasiswa</a>
+      </div>
+    </section>
+
+    <!-- BIODATA SECTION -->
+    <section class="section" id="biodata">
+      <div class="section-header">
+        <p class="section-eyebrow">01 / PROFIL</p>
+        <h2>Biodata <span>Mahasiswa</span></h2>
+      </div>
+
+      <div class="profile-card">
+        <div class="avatar-box">
+          <div class="avatar-ring"></div>
+          <div class="avatar-text">AM</div>
+        </div>
+        <div class="profile-details">
+          <div class="profile-title">
+            <h3>Aril Munazar</h3>
+            <span class="nim-badge">NIM: 262505023</span>
+          </div>
+          <div class="profile-grid">
+            <div class="info-item">
+              <span class="info-label">Program Studi</span>
+              <span class="info-value">Sistem Informasi</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Universitas</span>
+              <span class="info-value">Ma'soem University</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Mata Kuliah</span>
+              <span class="info-value">Matematika Informatika</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Dosen Pengampu</span>
+              <span class="info-value">Pa Iin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KALKULATOR SECTION -->
+    <section class="section" id="kalkulator">
+      <div class="section-header">
+        <p class="section-eyebrow">02 / INTERAKTIF</p>
+        <h2>Kalkulator <span>Matematika</span></h2>
+        <p class="section-desc">Pilih modul kalkulator untuk melakukan perhitungan matematis beserta visualisasi langkah demi langkah.</p>
+      </div>
+
+      <div class="calculator-grid">
+        <!-- 01. MODULO -->
+        <article class="calc-card">
+          <div class="card-header">
+            <span class="card-num">Lv.1</span>
+            <div>
+              <h3>Kalkulator Modulo</h3>
+              <p>Menghitung sisa hasil pembagian bilangan bulat (termasuk negatif).</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="input-row">
+              <div class="input-group">
+                <label for="mod-a">Bilangan (a)</label>
+                <input type="number" id="mod-a" placeholder="Contoh: -17">
+              </div>
+              <div class="input-group">
+                <label for="mod-m">Modulus (m)</label>
+                <input type="number" id="mod-m" min="1" placeholder="Contoh: 5">
+              </div>
+            </div>
+            <button class="btn action-btn" id="mod-btn">Hitung Modulo</button>
+            <div class="result-display" id="mod-result">
+              <span class="res-title">HASIL PERHITUNGAN</span>
+              <p class="res-empty">Masukkan nilai dan tekan tombol di atas.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02. KONGRUENSIS -->
+        <article class="calc-card">
+          <div class="card-header">
+            <span class="card-num">Lv.2</span>
+            <div>
+              <h3>Pemeriksa Kongruensi</h3>
+              <p>Menguji hubungan a ≡ b (mod m) pada sistem matematika diskrit.</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="input-row three-cols">
+              <div class="input-group">
+                <label for="con-a">Bilangan a</label>
+                <input type="number" id="con-a" placeholder="17">
+              </div>
+              <div class="input-group">
+                <label for="con-b">Bilangan b</label>
+                <input type="number" id="con-b" placeholder="5">
+              </div>
+              <div class="input-group">
+                <label for="con-m">Modulus m</label>
+                <input type="number" id="con-m" min="1" placeholder="6">
+              </div>
+            </div>
+            <button class="btn action-btn" id="con-btn">Uji Kongruensi</button>
+            <div class="result-display" id="con-result">
+              <span class="res-title">HASIL UJI KONGRUENSIS</span>
+              <p class="res-empty">Masukkan nilai dan tekan tombol di atas.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03. SISTEM BILANGAN -->
+        <article class="calc-card">
+          <div class="card-header">
+            <span class="card-num">Lv.5</span>
+            <div>
+              <h3>Konverter Sistem Bilangan</h3>
+              <p>Konversi real-time antara Biner, Oktal, Desimal, dan Heksadesimal.</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="input-row">
+              <div class="input-group">
+                <label for="base-val">Nilai Input</label>
+                <input type="text" id="base-val" placeholder="Contoh: 101101 atau 2F">
+              </div>
+              <div class="input-group">
+                <label for="base-from">Basis Asal</label>
+                <select id="base-from">
+                  <option value="2">Biner (Basis 2)</option>
+                  <option value="8">Oktal (Basis 8)</option>
+                  <option value="10" selected>Desimal (Basis 10)</option>
+                  <option value="16">Heksadesimal (Basis 16)</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn action-btn" id="base-btn">Konversi Sistem Bilangan</button>
+            <div class="result-display" id="base-result">
+              <span class="res-title">HASIL KONVERSI ALL-IN-ONE</span>
+              <p class="res-empty">Masukkan nilai dan tekan tombol di atas.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04. KOMBINATORIKA -->
+        <article class="calc-card">
+          <div class="card-header">
+            <span class="card-num">Lv.6</span>
+            <div>
+              <h3>Kalkulator Kombinatorika</h3>
+              <p>Menghitung nilai Permutasi P(n,r) dan Kombinasi C(n,r).</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="input-row">
+              <div class="input-group">
+                <label for="comb-n">Total Objek (n)</label>
+                <input type="number" id="comb-n" min="0" placeholder="Contoh: 7">
+              </div>
+              <div class="input-group">
+                <label for="comb-r">Objek Dipilih (r)</label>
+                <input type="number" id="comb-r" min="0" placeholder="Contoh: 3">
+              </div>
+            </div>
+            <button class="btn action-btn" id="comb-btn">Hitung P & C</button>
+            <div class="result-display" id="comb-result">
+              <span class="res-title">HASIL KOMBINATORIKA</span>
+              <p class="res-empty">Masukkan nilai dan tekan tombol di atas.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BUKTI BELAJAR SECTION -->
+    <section class="section" id="bukti-belajar">
+      <div class="section-header">
+        <h2>Bukti <span>Belajar</span></h2>
+        <p class="section-desc">Rangkuman materi dan tempat mengunggah dokumentasi pembelajaran Matematika Informatika.</p>
+      </div>
+
+      <div class="learning-grid">
+        <div class="learn-card">
+          <span class="badge">Bab 01</span>
+          <h4>Aritmatika Modulo</h4>
+          <p>Operasi sisa pembagian bilangan bulat yang menjadi dasar algoritma kriptografi modern.</p>
+        </div>
+        <div class="learn-card">
+          <span class="badge">Bab 02</span>
+          <h4>Teori Kongruensi</h4>
+          <p>Konsep dua bilangan yang memiliki sisa pembagian yang sama terhadap nilai modulus.</p>
+        </div>
+        <div class="learn-card">
+          <span class="badge">Bab 03</span>
+          <h4>Sistem Bilangan</h4>
+          <p>Representasi data komputer menggunakan basis 2 (Biner), 8 (Oktal), 10 (Desimal), dan 16 (Heksa).</p>
+        </div>
+        <div class="learn-card">
+          <span class="badge">Bab 04</span>
+          <h4>Kombinatorika</h4>
+          <p>Teknik pencacahan untuk menghitung banyaknya susunan (Permutasi) atau kelompok (Kombinasi).</p>
+        </div>
+      </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">Teks berhasil disalin ke clipboard!</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Aril Munazar (NIM: 262505023) · Sistem Informasi</p>
+    <a href="#home">Kembali ke Atas ↑</a>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
